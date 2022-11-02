@@ -22,6 +22,9 @@ const InputDiv = () => {
 
   return (
     <div className=" flex flex-col gap-4 justify-center items-center p-3">
+      <p className="text-3xl font-semibold tracking-tight">
+        Get Text Summarised!
+      </p>
       <Textarea
         placeholder="Write the text to be summarized"
         classNames={{ root: "w-[40vw]", description: "" }}
@@ -38,8 +41,11 @@ const InputDiv = () => {
       >
         Click
       </Button>
-      <div className="w-24">
-        <p>Result: {output}</p>
+      <div className="">
+        <p>
+          <span className="text-gray-400">Result: </span>
+          {output}
+        </p>
       </div>
     </div>
   );
