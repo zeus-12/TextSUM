@@ -1,4 +1,4 @@
-import { Textarea } from "@mantine/core";
+import { Button, Textarea } from "@mantine/core";
 import { useState } from "react";
 
 const InputDiv = () => {
@@ -31,11 +31,15 @@ const InputDiv = () => {
         value={data}
       />
 
-      <button onClick={requestAPI} className="b">
+      <Button
+        variant="outline"
+        onClick={requestAPI}
+        className="hover:bg-blue-400 border-blue-400 hover:text-white"
+      >
         Click
-      </button>
-      <div className="border border-red-500 w-24">
-        <p>{output}</p>
+      </Button>
+      <div className="w-24">
+        <p>Result: {output}</p>
       </div>
     </div>
   );
