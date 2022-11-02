@@ -28,6 +28,7 @@ const InputDiv = () => {
       <Textarea
         placeholder="Write the text to be summarized"
         classNames={{ root: "w-[40vw]", description: "" }}
+        minRows={6}
         onChange={(e) => {
           setData(e.target.value);
         }}
@@ -39,11 +40,11 @@ const InputDiv = () => {
         onClick={requestAPI}
         className="hover:bg-blue-400 border-blue-400 hover:text-white"
       >
-        Click
+        Convert!
       </Button>
       <div className="">
         <p>
-          <span className="text-gray-400">Result: </span>
+          <span className="text-gray-600">Result: </span>
           {output}
         </p>
       </div>
