@@ -53,7 +53,7 @@ const InputDiv = () => {
         <p>
           <span className="text-gray-600">Result: </span>
           {output}
-          {<p className="text-red-500">{error}</p>}
+          {<span className="text-red-500">{error}</span>}
         </p>
       </div>
     </div>
