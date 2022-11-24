@@ -6,7 +6,7 @@ export default async function handler(req, res) {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: "Token 9c3f17a6c71cd41801c7f033ddba9d39204e3b75",
+          Authorization: `Token ${process.env.API_KEY}`,
         },
         body: JSON.stringify(req.body),
       }
